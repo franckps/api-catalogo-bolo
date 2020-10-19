@@ -2,19 +2,24 @@
   "name": "api-site-bolo",
   "version": "1.0.0",
   "description": "Uma api para servir dados para um site simples de catálogo de bolos",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
   },
   "author": "Francisco Pereira dos Santos",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.5",
+    "multer": "^1.4.2",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
   }
 }

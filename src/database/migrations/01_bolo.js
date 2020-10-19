@@ -5,9 +5,8 @@ module.exports = {
             table.string('imagem').notNullable();
             table.string('nome').notNullable();
             table.string('descricao').notNullable();
-            table.string('recheio').notNullable();
-            table.string('cobertura').notNullable();
             table.integer('quantidade').notNullable();
+            table.decimal('preco').notNullable().defaultTo(0)
         });
     },
     down: async function(knex){
